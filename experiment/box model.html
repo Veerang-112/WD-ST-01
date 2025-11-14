@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Color Blocks Layout</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    display: flex;
+    border: 3px solid black;
+    height: 500px;
+    width: 880px;
+  }
+  .left {
+    background-color: red;
+    width: 20%;
+    border-right: 5px solid purple;
+  }
+  .right {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  .top {
+    background-color: cyan;
+    flex: 1;
+    border-bottom: 5px solid purple;
+  }
+  .bottom {
+    background-color: yellow;
+    flex: 1;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="left"></div>
+    <div class="right">
+      <div class="top"></div>
+      <div class="bottom"></div>
+    </div>
+  </div>
+</body>
+</html>
