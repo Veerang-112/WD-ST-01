@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <title>Student Profile Card</title>
+    <style>
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e7ecf2;
+    margin: 0;
+    padding: 25px;
+}
+.title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.profile-container {
+    width: 700px;
+    background: white;
+    margin: auto;
+    padding: 25px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start; 
+    align-items: center; 
+    gap: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+}
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+}
+.details-section {
+    display: flex;
+    flex-direction: column; 
+    gap: 6px;
+}
+.name {
+    margin: 0 0 10px 0;
+    font-size: 28px;
+    color: #0077ff;
+}
+.button-bar {
+    width: 700px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.button-bar button {
+    width: 30%;
+    padding: 12px;
+    font-size: 18px;
+    background: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.button-bar button:hover {
+    background: #005cb3;
+}
+    </style>
+</head>
+<body>
+    <h1 class="title">Student Profile Card</h1>
+    <div class="profile-container">
+        <img src="data:image/jpeg;base64,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" class="profile-img">
+        <div class="details-section">
+            <h2 class="name">Veerang Singh Dagar</h2>
+            <p>Course: B.Tech CSE(Ai/ml)</p>
+            <p>Roll No: 2025B15310234</p>
+            <p>College: ABC Senior Secondary School</p>
+        </div>
+
+    </div>
+    <div class="button-bar">
+        <button>Message</button>
+        <button>Call</button>
+        <button>Email</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,146 @@
+/* Page General */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f2f2f2;
+}
+
+/* Header */
+header {
+    background-color: #111;
+    color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+    margin-left: 20px;
+    font-size: 17px;
+}
+header nav a:hover {
+    color: #ffaa00;
+}
+
+/* Hero */
+.hero {
+    background: linear-gradient(#000000b7, #000000b7), url("https://via.placeholder.com/1100x350");
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+.hero h1 {
+    font-size: 45px;
+    margin-bottom: 10px;
+}
+
+/* Section Title */
+.section-title {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 32px;
+}
+
+/* Product Section */
+/* MULTIPLE PRODUCT ROW */
+.products-row {
+    width: 90%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: nowrap; /* ensure horizontal row */
+}
+
+.product-card {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.p-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.product-card h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+.price {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #0077ff;
+}
+
+.product-card .add-cart {
+    background-color: #ff7b00;
+    color: white;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.product-card .add-cart:hover {
+    background-color: #db6500;
+}
+
+.product-details {
+    width: 460px;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.price {
+    font-size: 24px;
+    color: #0077ff;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 30px;
+}
+
+.add-cart {
+    background-color: #ff7b00;
+    color: white;
+    font-size: 18px;
+    padding: 14px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+.add-cart:hover {
+    background-color: #d86300;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 40px;
+}
