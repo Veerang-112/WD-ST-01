@@ -1,59 +1,106 @@
+<!DOCTYPE html>
 <html>
 <head>
-  <title>Responsive Navbar (Example)</title>
-  <style>
-    body { margin: 0; font-family: Arial; }
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #222;
-      padding: 10px;
-      color: white;
-    }
-    .logo { font-size: 20px; font-weight: bold; }
-    .menu {
-      display: flex;
-      gap: 20px;
-    }
-    .menu a {
-      color: white;
-      text-decoration: none;
-    }
-    /* Mobile menu hidden by default */
-    .mobile-btn {
-      display: none;
-      font-size: 22px;
-      cursor: pointer;
-    }
-    @media (max-width: 400px) {
-      .menu { 
-        display: none; 
-        flex-direction: column;
-        background: #222;
-        padding: 10px;
-      }
-      .menu.show {
-        display: flex;
-      }
-      .mobile-btn {
-        display: block;
-      }
-    }
-  </style>
+    <title>Responsive E-commerce Navbar</title>
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar container */
+        .navbar{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background: #1e1e1e;
+            color: white;
+            flex-wrap: wrap;
+        }
+
+        .logo{
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Navigation links */
+        .nav-links a{
+            color: white;
+            text-decoration: none;
+            margin: 0 12px;
+            font-size: 17px;
+        }
+
+        .nav-links{
+            display: flex;
+        }
+
+        /* Search bar */
+        .search-box{
+            margin-top: 10px;
+        }
+        .search-box input{
+            padding: 6px;
+            width: 200px;
+            border-radius: 4px;
+            border: none;
+        }
+
+        /* Cart button */
+        .cart{
+            background: #ff9800;
+            padding: 8px 14px;
+            margin-left: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        /* ---- Responsive Styling ---- */
+        @media (max-width: 768px){
+            .nav-links{
+                width: 100%;
+                justify-content: center;
+                margin-top: 8px;
+                flex-wrap: wrap;
+            }
+
+            .search-box input{
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px){
+            .nav-links a{
+                margin: 6px;
+                font-size: 15px;
+            }
+            .cart{
+                margin-top: 8px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="navbar">
-    <div class="logo">My Shop</div>
-    <div class="mobile-btn" >☰</div>
-    <div class="menu" id="menu">
-      <a href="#">Home</a>
-      <a href="#">Products</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
 
-  
+    <div class="navbar">
+        <div class="logo">ShopZone</div>
+
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Men</a>
+            <a href="#">Women</a>
+            <a href="#">Kids</a>
+            <a href="#">Sale</a>
+        </div>
+
+        <div class="search-box">
+            <input type="text" placeholder="Search products..">
+        </div>
+
+        <div class="cart">🛒 Cart</div>
+    </div>
+
 </body>
 </html>
